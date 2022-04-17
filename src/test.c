@@ -1,11 +1,5 @@
 #include <stdio.h>
-
-struct person_info
-{
-    char name[20];
-    char sex[20];
-    char age[20];
-};
+#include <../include/test.h>
 
 void person_info_show(struct person_info p_i)
 {
@@ -14,6 +8,7 @@ void person_info_show(struct person_info p_i)
     printf("age: %s\n", p_i.age);
     
 }
+
 int main(int argc, char * argv[])
 {
     struct person_info p_i = {0};
